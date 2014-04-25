@@ -10,9 +10,12 @@ using TFTPClientNameSpace;
 namespace TestSuite01
 {
     /// <summary>
+    /// Source file for generating Nunit tests
     /// Testing 0-switch coverage of the TFTP client as well as BVA on the
     /// buffersize for exit
     /// </summary>
+    
+
     [TestFixture]
     class TestInitExit
     {
