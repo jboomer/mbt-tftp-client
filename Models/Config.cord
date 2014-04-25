@@ -1,0 +1,40 @@
+﻿using Microsoft.Modeling;
+using TFTPClientTest.Models;
+using TFTPClientTest.Adapter;
+
+config Main 
+{
+    switch StepBound = 128;
+    switch PathDepthBound = 128;
+    switch TestClassBase = "vs";
+    switch GeneratedTestPath = "..\\TFTPClientModelBasedTesting.TestSuite";
+    switch GeneratedTestNamespace = "TFTPClientModelBasedTesting.TestSuite";
+    switch TestEnabled = false;
+    switch ForExploration = false;
+
+    action abstract static void TFTPClientAdapter.GetCoarseWrapper();
+    action abstract static void TFTPClientAdapter.GetExit();
+    action abstract static void TFTPClientAdapter.GetFineWrapper(int SelMode)
+        where SelMode in {0..2};
+    action abstract static void TFTPClientAdapter.Initialize();
+    action abstract static void TFTPClientAdapter.PutCoarseWrapper();
+    action abstract static void TFTPClientAdapter.PutExit();
+    action abstract static void TFTPClientAdapter.PutFineWrapper(int SelMode)
+        where SelMode in {0..2};
+    action abstract static void TFTPClientAdapter.ReceiveAck();
+    action abstract static void TFTPClientAdapter.ReceiveDataBlock();
+    action abstract static void TFTPClientAdapter.SendAck();
+    action abstract static void TFTPClientAdapter.SendDataBlock();
+    action abstract static void TFTPClientAdapter.StartRead(int SelMode)
+        where SelMode in {0..2};
+    action static void TFTPClientAdapter.StartWrite(int SelMode)
+        where SelMode in {0..2};
+    action TFTPClientAdapter();
+}
+
+machine TFTPClientModel() : Main where ForExploration = true
+{
+    construct model program from Main
+    where scope = "TFTPClientTest.Models.ClientModel"
+}
+

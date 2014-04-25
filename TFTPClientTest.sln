@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFTPClientTest.Adapter", "Adapter\TFTPClientTest.Adapter.csproj", "{D4607028-8130-429D-B536-487E94B171EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFTPClientTest.Models", "Models\TFTPClientTest.Models.csproj", "{03FE7703-BBDA-44A0-8A13-90B3122A07A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFTPClientTest.TestSuites", "TestSuites\TFTPClientTest.TestSuites.csproj", "{853F0842-730B-4503-8EEA-50122C8A6C04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFTPClientTest.Implementation", "Implementation\TFTPClientTest.Implementation.csproj", "{313AD96D-49CA-4127-88AA-B2B725481306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFTPClientTest.UnitTests", "UnitTests\TFTPClientTest.UnitTests.csproj", "{FE417F9C-68A0-4FA1-B732-A26C6C251D4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4607028-8130-429D-B536-487E94B171EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4607028-8130-429D-B536-487E94B171EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4607028-8130-429D-B536-487E94B171EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4607028-8130-429D-B536-487E94B171EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03FE7703-BBDA-44A0-8A13-90B3122A07A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FE7703-BBDA-44A0-8A13-90B3122A07A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FE7703-BBDA-44A0-8A13-90B3122A07A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FE7703-BBDA-44A0-8A13-90B3122A07A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853F0842-730B-4503-8EEA-50122C8A6C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853F0842-730B-4503-8EEA-50122C8A6C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853F0842-730B-4503-8EEA-50122C8A6C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853F0842-730B-4503-8EEA-50122C8A6C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{313AD96D-49CA-4127-88AA-B2B725481306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{313AD96D-49CA-4127-88AA-B2B725481306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{313AD96D-49CA-4127-88AA-B2B725481306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{313AD96D-49CA-4127-88AA-B2B725481306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE417F9C-68A0-4FA1-B732-A26C6C251D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE417F9C-68A0-4FA1-B732-A26C6C251D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE417F9C-68A0-4FA1-B732-A26C6C251D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE417F9C-68A0-4FA1-B732-A26C6C251D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
+		SpecExplorer.ActivityCompletionStatus = TestExisting: ;ModelFromScratch: 
+	EndGlobalSection
+EndGlobal
